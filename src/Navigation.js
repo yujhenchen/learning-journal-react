@@ -1,14 +1,14 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="./home">HOME</a>
+          <Link to="./">HOME</Link>
         </li>
         <li>
-          <a href="./about">ABOUT ME</a>
+          <Link to="./about">ABOUT ME</Link>
         </li>
       </ul>
     </nav>
