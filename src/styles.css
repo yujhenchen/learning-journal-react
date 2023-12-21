@@ -106,6 +106,10 @@ article {
   padding: 1.25rem;
 }
 
+article section {
+  padding-top: 6rem;
+}
+
 article .image-container img {
   width: 100%;
   margin: auto;

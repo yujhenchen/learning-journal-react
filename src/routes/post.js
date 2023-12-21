@@ -12,14 +12,14 @@ export default function PostPage() {
     image,
   }) {
     return (
-      <>
+      <section>
         <p>{date}</p>
         <h2>{title}</h2>
         <p>{description}</p>
         <div className="image-container">
           <img src={image} alt="Article Image" />
         </div>
-      </>
+      </section>
     );
   });
   return (
