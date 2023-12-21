@@ -6,9 +6,9 @@ export default function BlogCard({ imageSrc, imageAlt, date, title, body }) {
       <div className="image-container">
         <img src={imageSrc} alt={imageAlt} />
       </div>
-      <p>{date}</p>
-      <p>{title}</p>
-      <p>{body}</p>
+      <p className="blog-card-date">{date}</p>
+      <p className="blog-card-title">{title}</p>
+      <p className="blog-card-body">{body}</p>
     </div>
   );
 }
