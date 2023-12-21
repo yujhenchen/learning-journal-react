@@ -4,8 +4,8 @@ import Navigation from "./Navigation";
 export default function Header() {
   return (
     <header>
-      <div>
-        <img src="" alt=""></img>
+      <div id="logo">
+        <img src="" alt="" />
         <span>My learning journal</span>
       </div>
 

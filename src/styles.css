@@ -1,4 +1,38 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  place-content: space-between;
+  font-size: 1.25rem;
+  padding: 1em 1em;
+  align-items: end;
+}
+
+header nav,
+#logo {
+  display: flex;
+  flex-grow: 1;
+}
+
+header #logo {
+  justify-content: start;
+}
+
+header nav {
+  justify-content: end;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  flex-basis: 50%;
+  place-content: space-between;
+}
+
+header ul li {
+  font-size: 0.75rem;
 }
