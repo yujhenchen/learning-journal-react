@@ -6,7 +6,8 @@
 
 /* header */
 header {
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   place-content: space-between;
   font-size: 1.25rem;
@@ -41,19 +42,23 @@ header ul li {
 
 /* main */
 main {
-  width: 100vw;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* hero, blog card */
 .hero .image-container,
 .blog-card .image-container {
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
 .hero img,
 .blog-card img {
   width: 100%;
+  margin: auto;
+  display: block;
   object-fit: cover;
 }
 
@@ -68,6 +73,7 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 1.25rem;
 }
 
 .hero-date {
@@ -80,4 +86,10 @@ main {
 
 .hero-body {
   font-size: 1rem;
+}
+
+/* footer */
+footer {
+  max-width: 100%;
+  width: 100%;
 }
