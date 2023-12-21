@@ -122,11 +122,39 @@ See the [open issues](https://github.com/yujhenchen/learning-journal-react/issue
 
 ## Issues and solutions
 
-### Issue
+### src\index.js Line 0:  Parsing error: You appear to be using a native ECMAScript module configuration file, which is only supported when running Babel asynchronously
 
 #### Solution
+Change **src\index.js** from:
 
+```
+...
 
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
+```
+
+to:
+```
+...
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
+
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
