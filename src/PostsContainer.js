@@ -2,7 +2,7 @@ import BlogCard from "./BlogCard";
 
 export default function RecentPostsContainer({ blogs }) {
   return (
-    <section>
+    <section className="posts-container">
       {blogs.map((blog, index) => (
         <BlogCard key={index} {...blog} />
       ))}

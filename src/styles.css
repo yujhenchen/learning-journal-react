@@ -19,6 +19,8 @@ header {
   align-items: end;
   background-color: white;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  font-weight: bold;
+  color: black;
 }
 
 header nav,
@@ -46,6 +48,10 @@ header ul li {
   font-size: 0.75rem;
 }
 
+header ul li a {
+  text-decoration: none;
+}
+
 /* main */
 main {
   max-width: 100%;
@@ -60,9 +66,15 @@ main {
   overflow: hidden;
 }
 
+.card-image-container {
+  height: 240px;
+}
+
 .hero img,
 .blog-card img {
   width: 100%;
+  max-width: 100%;
+  height: 100%;
   margin: auto;
   display: block;
   object-fit: cover;
@@ -111,6 +123,7 @@ article section {
 }
 
 article .image-container img {
+  max-width: 100%;
   width: 100%;
   margin: auto;
   display: block;
@@ -157,11 +170,72 @@ footer .copyright {
   width: 100%;
 }
 
-.link {
-  font-size: 1rem;
+.link,
+.post-block-heading {
   font-weight: bold;
   margin: 0 auto;
   width: fit-content;
   display: block;
   color: black;
+}
+
+.link {
+  font-size: 1rem;
+}
+
+/* post block heading */
+.post-block-heading {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  /* header, */
+  main,
+  footer {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  /* header, */
+  main,
+  footer {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .posts-container {
+    display: grid;
+    /* grid-template-areas: "card card card"; */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* header, */
+  main,
+  footer {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* header, */
+  main,
+  footer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  /* header, */
+  main,
+  footer {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
 }

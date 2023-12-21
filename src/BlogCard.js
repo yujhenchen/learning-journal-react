@@ -6,7 +6,7 @@ export default function BlogCard({ imageSrc, imageAlt, date, title, body }) {
 
   return (
     <div className="blog-card" onClick={() => navigate("/post/1")}>
-      <div className="image-container">
+      <div className="image-container card-image-container">
         <img src={imageSrc} alt={imageAlt} />
       </div>
 

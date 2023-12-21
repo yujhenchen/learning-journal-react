@@ -3,6 +3,7 @@ import Article from "../Article";
 import PostsContainer from "../PostsContainer";
 import { data, articleData } from "../data";
 import getRandomElementsFromArray from "../helper";
+import PostBlockHeading from "../PostBlockHeading";
 
 export default function PostPage() {
   const ArticleMain = memo(function ArticleMain({
@@ -25,6 +26,7 @@ export default function PostPage() {
   return (
     <main>
       <Article {...articleData}>{<ArticleMain {...articleData} />}</Article>
+      <PostBlockHeading text={"Recent Posts"} />
       <PostsContainer blogs={getRandomElementsFromArray(data, 3)} />
     </main>
   );

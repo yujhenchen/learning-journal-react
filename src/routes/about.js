@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import Article from "../Article";
 import PostsContainer from "../PostsContainer";
+import PostBlockHeading from "../PostBlockHeading";
 import { data, aboutData } from "../data";
 import getRandomElementsFromArray from "../helper";
 
@@ -19,6 +20,7 @@ export default function AboutPage() {
   return (
     <main>
       <Article {...aboutData}>{<AboutMain {...aboutData} />}</Article>
+      <PostBlockHeading text={"Recent Posts"} />
       <PostsContainer blogs={getRandomElementsFromArray(data, 3)} />
     </main>
   );
