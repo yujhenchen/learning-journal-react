@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
+/* header */
 header {
+  width: 100vw;
   display: flex;
   place-content: space-between;
   font-size: 1.25rem;
@@ -13,12 +15,12 @@ header {
 }
 
 header nav,
-#logo {
+.logo-container {
   display: flex;
   flex-grow: 1;
 }
 
-header #logo {
+.logo-container {
   justify-content: start;
 }
 
@@ -35,4 +37,47 @@ header ul {
 
 header ul li {
   font-size: 0.75rem;
+}
+
+/* main */
+main {
+  width: 100vw;
+}
+
+/* hero, blog card */
+.hero .image-container,
+.blog-card .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero img,
+.blog-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-date {
+  font-size: 0.75rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+}
+
+.hero-body {
+  font-size: 1rem;
 }

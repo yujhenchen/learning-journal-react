@@ -2,14 +2,16 @@ import React from "react";
 
 export default function Hero({ backgroundImage, date, title, body }) {
   return (
-    <div>
-      <div>
+    <div className="hero">
+      <div className="image-container">
         <img src={backgroundImage} alt="Hero Background Image" />
       </div>
 
-      <p>{date}</p>
-      <p>{title}</p>
-      <p>{body}</p>
+      <div className="hero-content">
+        <p className="hero-date">{date}</p>
+        <p className="hero-title">{title}</p>
+        <p className="hero-body">{body}</p>
+      </div>
     </div>
   );
 }
