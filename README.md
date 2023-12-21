@@ -63,7 +63,7 @@ My solo project - Learning Journal.
 ### Built With
 
 - [![React][React.js]][React-url]
-- [![React Router]][React Router-url]
+- [![ReactRouter]][ReactRouter-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,7 +94,7 @@ yarn
 Launch at localhost in development mode
 
 ```sh
-yarn dev
+yarn start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -194,5 +194,5 @@ Project Link: [https://github.com/yujhenchen/learning-journal-react](https://git
 [product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[React Router]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-[React Router-url]: https://reactrouter.com/en/main
+[ReactRouter]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[ReactRouter-url]: https://reactrouter.com/en/main
