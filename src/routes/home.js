@@ -9,8 +9,10 @@ export default function HomePage() {
     <main>
       <Hero {...heroData} />
       <PostsContainer blogs={blogs} />
-      <div>
-        <a href="">View More</a>
+      <div className="link-container">
+        <a href="#" className="link">
+          View More
+        </a>
       </div>
     </main>
   );
